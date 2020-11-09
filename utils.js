@@ -111,11 +111,3 @@ module.exports = [
     sumOfEachRow
 
 ]
-
-
-
-
-
-
-
-

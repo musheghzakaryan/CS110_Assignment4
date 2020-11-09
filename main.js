@@ -1,2 +1,2 @@
-const functions = require('./utils.js')
+const functions = require('./utils')
 console.log(functions);
