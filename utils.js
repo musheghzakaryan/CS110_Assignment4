@@ -37,6 +37,7 @@ let mat2 = [
 
 beautyLog(matrixProduct(mat1, mat2));
 
+
 // 1st
 
 
@@ -56,13 +57,11 @@ function sumOfMatrcies(A, B){
 return A;
 
 }
-
-function beautyLog(sumOfMatrcies){
-    for(let i = 0; i < sumOfMatrcies.length; i++){
-        console.log(sumOfMatrcies[i]);
-    }
-}
-
+ function beautyLog(sumOfMatrcies){
+     for(let i = 0; i < sumOfMatrcies.length; i++){
+         console.log(sumOfMatrcies[i]);
+     }
+ }
 
 
 let A = [
@@ -77,10 +76,46 @@ let B = [
 
 beautyLog(sumOfMatrcies(A, B));
 
-// 2st
+// // // 2nd
 
-module.exports = {
+
+
+function sumOfEachRow(matrix = []) {
+    let result = [];
+    for(let row = 0; row < A.length; row++) {
+      let sum = 0;
+      for(let col = 0; col < A[i].length; col++) {
+        sum += matrix[row][col]
+      }
+      result.push(sum)
+    }
+    return result;
+  }
+   
+  
+  let matrix = [
+    [10, 15],
+    [20, 25],
+    [30, 35]
+  ]
+  console.log(sumOfEachRow);
+
+// // 3rd
+
+
+
+module.exports = [
     beautyLog,
     sumOfMatrcies,
-    matrixProduct
-}
+    matrixProduct,
+    sumOfEachRow
+
+]
+
+
+
+
+
+
+
+
